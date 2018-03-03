@@ -1,0 +1,11 @@
+title: Jonathan Michelson
+url: "https://jonathanmichelson.com"
+baseurl: ""
+
+markdown: kramdown
+
+tracking_id: #
+
+sass:
+    style: compressed
+    sass_dir: _sass
