@@ -24,3 +24,4 @@ Links:
 1. [GitHub](https://www.github.com/jmichel3)
 2. [SoundCloud](https://www.soundcloud.com/jonmichelson)
 3. [LinkedIn](https://www.linkedin.com/in/jonathanmichelson/)
+4. [WordPress](http://ec2-54-245-184-48.us-west-2.compute.amazonaws.com/blog/)
