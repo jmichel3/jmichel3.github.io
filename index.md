@@ -4,10 +4,10 @@ layout: default
 
 <img class="profile-picture" src="assets/headshot-sq.png">
 
-[under construction]
+I'm a NYC-based electrical engineer currently working at [Electro-Harmonix](https://ehx.com). I’m inquisitive about novel audio and speech-processing problems, and am motivated by the impact their solutions have on musicians and end-users. To get in touch, please email me at [jon.michelson93@gmail.com](mailto:jon.michelson93@gmail.com). You can download my résumé [here](http://jonathanmichelson.com/assets/resume-20180725.pdf).
+
+[GitHub](https://www.github.com/jmichel3) / [LinkedIn](https://www.linkedin.com/in/jonathanmichelson/) / [SoundClou](https://www.soundcloud.com/jonmichelson)[d](http://ec2-54-84-52-119.compute-1.amazonaws.com/blog/)
 
 ---  
 
 Built with [Jekyll](https://jekyllrb.com/) -- theme by [bk2dcradle](https://github.com/bk2dcradle/researcher)  
-
----
