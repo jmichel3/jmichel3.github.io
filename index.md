@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<img class="profile-picture" src="assets/best768sq.png">
+<img class="profile-picture" src="assets/animoji-headshot.jpg">
 
 I'm a NYC-based electrical engineer currently working at [Electro-Harmonix](https://ehx.com). I’m inquisitive about novel audio and speech-processing problems, and am motivated by the impact their solutions have on musicians and end-users. To get in touch, please email me at [jon.michelson93@gmail.com](mailto:jon.michelson93@gmail.com). You can download my résumé [here](http://jonathanmichelson.com/assets/resume-20180725.pdf).
 
