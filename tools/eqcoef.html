@@ -50,7 +50,7 @@
 
 <body>
 
-<h1>v2.2</h1>
+<h1>v2.3</h1>
 
 <div class="slidecontainer">
   <p>Default range slider:</p>
@@ -79,16 +79,34 @@ slider.addEventListener("change", function(){
 
 TESTER = document.getElementById('tester');
 
+var data = [{
+  x: [1, 2, 3, 4, 5],
+  y: [1, 2, 4, 8, 15]
+}];
+
+var layout = {
+  title: 'My Plot',
+  margin: { t: 0 }
+  xaxis: {
+    title: 'Frequency (hz)'
+  },
+  yaxis {
+    title: 'Magnitude (db)'
+  }
+}
+
+Plotly.plot(TESTER, data, layout);
+
+/* Current Plotly.js version */
+console.log( Plotly.BUILD );
+
+var updateData = {
+  data[0].x[4] = y;
+}
 setInterval(function() {
   y = myRange.value;
-  Plotly.plot( TESTER, [{
-      x: [1, 2, 3, 4, 5],
-      y: [1, 2, 4, 8, y] }], {
-      margin: { t: 0 } } );
-
-  /* Current Plotly.js version */
-  console.log( Plotly.BUILD );
-}, 500)
+  Plotly.update(TESTER, updateData);
+}, 100)
 
 </script>
 
