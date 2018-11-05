@@ -50,7 +50,7 @@
 
 <body>
 
-<h1>v2.3</h1>
+<h1>v2.4</h1>
 
 <div class="slidecontainer">
   <p>Default range slider:</p>
@@ -62,13 +62,15 @@
 
 <p>My first paragraph.</p>
 
+
 <div id="tester" style="width:600px;height:250px;"></div>
 
 
 
 
 
-
+<input type="range" oninput="updatePoint(this.value)">
+<p id="textDisplay"></p>
 
 <script>
 var slider = document.getElementById("myRange");
@@ -103,8 +105,8 @@ var updateData = {
 }
 
 
-function updatePoint(){
-  yVal = myRange.value;
+function updatePoint(yVal){
+  document.getElementById("textDisplay").innerHTML = yVal;
   data[0]['y'][4] = yVal;
   Plotly.update(TESTER, updateData);
 }
