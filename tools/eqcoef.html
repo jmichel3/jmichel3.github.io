@@ -51,7 +51,11 @@ var layout = {
   yaxis: {
     title: 'Magnitude (db)'
   }
-}
+};
+
+var layout_update = {
+  title: 'derp',
+};
 
 Plotly.newPlot(TESTER, data, layout);
 
@@ -61,7 +65,7 @@ console.log( Plotly.BUILD );
 function updatePoint(val){
   document.getElementById("textDisplay").innerHTML = val;
   data[0]['y'][4] = val/10;
-  Plotly.react(TESTER, data, layout);
+  Plotly.update(TESTER, data, layout_update);
 }
 
 </script>
