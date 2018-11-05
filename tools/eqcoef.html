@@ -64,17 +64,34 @@
 
 <div id="tester" style="width:600px;height:250px;"></div>
 
+
+
+
+
+
+
 <script>
+var slider = document.getElementById("myRange");
+var y = 0;
+slider.addEvenListener("change", function(){
+  y = myRange.value;
+})
+
 TESTER = document.getElementById('tester');
 
 Plotly.plot( TESTER, [{
-    x: [1, 2, 3, 4, 5],
+    x: [1, 2, 3, 4, y],
     y: [1, 2, 4, 8, 16] }], {
     margin: { t: 0 } } );
 
 /* Current Plotly.js version */
 console.log( Plotly.BUILD );
 </script>
+
+
+
+
+
 
 </body>
 
