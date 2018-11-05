@@ -53,15 +53,15 @@ var layout = {
   }
 }
 
-Plotly.plot(TESTER, data, layout);
+Plotly.newPlot(TESTER, data, layout);
 
 /* Current Plotly.js version */
 console.log( Plotly.BUILD );
 
 function updatePoint(val){
   document.getElementById("textDisplay").innerHTML = val;
-  data[0]['y'][4] = val;
-  Plotly.newPlot(TESTER, data, layout);
+  data[0]['y'][4] = val/10;
+  Plotly.react(TESTER, data, layout);
 }
 
 </script>
