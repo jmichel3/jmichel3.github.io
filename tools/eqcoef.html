@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+</head>
+
+
+
+
+
+
+<body>
+
+<h1>v2.4</h1>
+
+
+<div id="tester" style="width:600px;height:250px;"></div>
+
+
+
+<input type="range" oninput="updatePoint(this.value)">
+
+
+
+<p id="textDisplay">10</p>
+
+
+
+
+
+
+
+<script>
+
+
+TESTER = document.getElementById('tester');
+
+var data = [{
+  x: [1, 2, 3, 4, 5],
+  y: [1, 2, 4, 8, 15]
+}];
+
+var layout = {
+  title: 'My Plot',
+  margin: { t: 0 },
+  xaxis: {
+    title: 'Frequency (hz)'
+  },
+  yaxis: {
+    title: 'Magnitude (db)'
+  }
+};
+
+Plotly.newPlot(TESTER, data, layout);
+
+/* Current Plotly.js version */
+console.log( Plotly.BUILD );
+
+function updatePoint(val){
+  document.getElementById("textDisplay").innerHTML = val;
+  data[0]['y'][4] = val/10;
+  Plotly.newPlot(TESTER, data, layout);
+}
+
+</script>
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+</html>
